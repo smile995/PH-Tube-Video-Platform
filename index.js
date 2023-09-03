@@ -20,6 +20,7 @@ const videoDisplay = async(categoryid) => {
     const videos=data.data
     // console.log(videos);
     const videoContainer=document.getElementById("videoContainer");
+    videoContainer.innerHTML='';
     videos.forEach(video=>{
         console.log(video);
         const videoDiv=document.createElement("div");
@@ -50,8 +51,12 @@ const videoDisplay = async(categoryid) => {
 
     // console.log(categoryid);
 };
-
+function newBlog(){
+    // console.log('clicked');
+    window.location.href=('blog.html')
+}
 
 
 
 PHTube();
+videoDisplay(1000);

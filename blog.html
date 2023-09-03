@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Blog of 86-PHERO-TUBE Tube</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="container mx-auto text-lg p-5">
+    <!-- first question -->
+    <section>
+        <h1 class="text-center text-cyan-400 text-5xl font-bold">Blog Questions</h1>
+        <!-- var scop -->
+        <div class="mt-5 ">
+            <h1 class="text-4xl font-bold">Discuss the scope of var, let, and const</h1>
+            <p class="text-lg font-semibold text-cyan-400">var Scope:</p>
+            <p><span class="font-semibold">Function Scope:</span> Variables declared with var are function-scoped. This
+                means that they are accessible throughout the entire function in which they are declared, but not
+                outside of
+                that function.</p>
+            <p><span class="font-semibold">Hoisting:</span> Variables declared with var are hoisted to the top of their
+                containing function or global scope. This means you can use a var variable before it is declared in
+                code,
+                but its value will be undefined until the actual declaration is reached.</p>
+        </div>
+        <!-- let and const Scope: -->
+        <div class="mt-2 p-5">
+            <p class="text-lg font-semibold text-cyan-400">let and const Scope</p>
+            <p><span class="font-semibold">Block Scope:</span> Variables declared with let and const are block-scoped.
+                This
+                means they are limited in scope to the block (enclosed by curly braces {}) in which they are declared,
+                such
+                as loops, conditionals, or function blocks. They are not accessible outside of that block.</p>
+            <p><span class="font-semibold">No Hoisting (Temporal Dead Zone):</span> Unlike var, variables declared with
+                let
+                and const are not hoisted to the top of their containing block. If you try to access them before their
+                declaration, you'll encounter the "Temporal Dead Zone," and accessing them will result in a
+                ReferenceError.
+            </p> <br>
+            <p>In summary, var has function scope and is hoisted, while let and const have block scope and are not
+                hoisted. const additionally enforces immutability for variable values but allows mutation of object and
+                array contents. It's generally recommended to use let and const for variable declarations in modern
+                JavaScript because they offer more predictable and safer scoping behavior. Use const for variables whose
+                values should not change and let for variables that may need to be reassigned.</p>
+        </div>
+    </section>
+    <!-- second question -->
+    <section>
+        <h1 class="text-4xl font-bold">Tell us the use cases of null and undefined</h1>
+        <div>
+            <p class="font-semibold text-lg text-cyan-400">undefined</p>
+            <p><span class="font-semibold">Default Value for Uninitialized Variables:</span> When a variable is declared but not assigned a value, it is automatically assigned the value undefined. This is useful as a default value for variables when you want to indicate that they have not been given a value yet.</p>
+            <p><span class="font-semibold">Function Parameters:</span> If a function parameter is not provided when the function is called, it is assigned the value undefined. You can use this to check if an argument was passed to a function or not.</p>
+        </div>
+        <div>
+            <p class="font-semibold text-lg text-cyan-400">null</p>
+            <p><span class="font-semibold">Explicitly Indicate Absence of Value:</span> Unlike undefined, null is used to explicitly indicate the absence of a value or the intention that a variable should have no value. It is often used as a placeholder when a value is expected but not available.</p>
+            <p><span class="font-semibold">Clearing Object Properties:</span> You can set an object property to null to indicate that it should have no value or to clear a previously assigned value.</p>
+            <p><span class="font-semibold">As a Sentinel Value:</span> In some cases, null can be used as a sentinel value to indicate that a particular condition or state is met.</p> <br>
+            <p>In summary, undefined is typically used to represent the absence of a value due to variables being uninitialized or missing function arguments or object properties. null, on the other hand, is used when you want to explicitly indicate the absence of a value or to clear a value in an object property. Both null and undefined are values that have their own specific use cases in JavaScript, and understanding when to use them can help you write more expressive and reliable code.
+            </p>
+        </div>
+    </section>
+
+</body>
+
+</html>
