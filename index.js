@@ -19,8 +19,33 @@ const videoDisplay = async(categoryid) => {
     const data=await response.json();
     const videos=data.data
     // console.log(videos);
+    const videoContainer=document.getElementById("videoContainer");
     videos.forEach(video=>{
         console.log(video);
+        const videoDiv=document.createElement("div");
+        videoDiv.innerHTML=`
+        <figure><img  src="${video.thumbnail}" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <div class="flex items-start">
+                    <div class="flex items-start ">
+                        <img class="rounded-full w-10" src="${video.authors[0].profile_picture}"" alt="not founded">
+                        
+                      </div>
+                      <div class="pl-5">
+                        <h2 class="card-title">${video. title} </h2>
+                        <div class="flex items-center" >
+                        
+                         <p>${video.authors[0].profile_name}</p>
+                         <img src="" alt="">
+                        
+                        </div>
+                        <p>${video.others.views} views</p>
+                      </div>
+                  </div>
+                  
+                </div>
+                `;
+                videoContainer.appendChild(videoDiv)   
     })
 
     // console.log(categoryid);
