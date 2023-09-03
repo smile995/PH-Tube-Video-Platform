@@ -36,14 +36,9 @@ const videoDisplay = async(categoryid) => {
                       <div class="pl-5">
                         <h2 class="card-title">${video. title} </h2>
                         <div class="flex items-center" >
-                        
-                         <p>${video.authors[0].profile_name}</p>
+                          <p>${video.authors[0].profile_name}</p>
                          <p>${blueTik}</p>
-
-                         
-                         
-                        
-                        </div>
+                           </div>
                         <p>${video.others.views} views</p>
                       </div>
                   </div>
