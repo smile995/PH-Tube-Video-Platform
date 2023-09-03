@@ -30,7 +30,7 @@ const videoDisplay = async(categoryid) => {
                 <div class="card-body">
                   <div class="flex items-start">
                     <div class="flex items-start ">
-                        <img class="rounded-full w-10" src="${video.authors[0].profile_picture}"" alt="not founded">
+                        <img class="rounded-full w-10 h-10" src="${video.authors[0].profile_picture}"" alt="not founded">
                         
                       </div>
                       <div class="pl-5">
@@ -38,7 +38,7 @@ const videoDisplay = async(categoryid) => {
                         <div class="flex items-center" >
                         
                          <p>${video.authors[0].profile_name}</p>
-                         <img  src="" alt="">
+                         <img  src="${video.authors[0].verified}" alt="">
                         
                         </div>
                         <p>${video.others.views} views</p>
