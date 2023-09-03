@@ -25,7 +25,7 @@ const videoDisplay = async(categoryid) => {
         console.log(video);
         const videoDiv=document.createElement("div");
         videoDiv.innerHTML=`
-        <figure><img  src="${video.thumbnail}" alt="Shoes" /></figure>
+        <figure><img src="${video.thumbnail}" alt="Shoes" /></figure>
                 <div class="card-body">
                   <div class="flex items-start">
                     <div class="flex items-start ">

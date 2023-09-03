@@ -51,15 +51,60 @@
         <h1 class="text-4xl font-bold">Tell us the use cases of null and undefined</h1>
         <div>
             <p class="font-semibold text-lg text-cyan-400">undefined</p>
-            <p><span class="font-semibold">Default Value for Uninitialized Variables:</span> When a variable is declared but not assigned a value, it is automatically assigned the value undefined. This is useful as a default value for variables when you want to indicate that they have not been given a value yet.</p>
-            <p><span class="font-semibold">Function Parameters:</span> If a function parameter is not provided when the function is called, it is assigned the value undefined. You can use this to check if an argument was passed to a function or not.</p>
+            <p><span class="font-semibold">Default Value for Uninitialized Variables:</span> When a variable is declared
+                but not assigned a value, it is automatically assigned the value undefined. This is useful as a default
+                value for variables when you want to indicate that they have not been given a value yet.</p>
+            <p><span class="font-semibold">Function Parameters:</span> If a function parameter is not provided when the
+                function is called, it is assigned the value undefined. You can use this to check if an argument was
+                passed to a function or not.</p>
         </div>
         <div>
             <p class="font-semibold text-lg text-cyan-400">null</p>
-            <p><span class="font-semibold">Explicitly Indicate Absence of Value:</span> Unlike undefined, null is used to explicitly indicate the absence of a value or the intention that a variable should have no value. It is often used as a placeholder when a value is expected but not available.</p>
-            <p><span class="font-semibold">Clearing Object Properties:</span> You can set an object property to null to indicate that it should have no value or to clear a previously assigned value.</p>
-            <p><span class="font-semibold">As a Sentinel Value:</span> In some cases, null can be used as a sentinel value to indicate that a particular condition or state is met.</p> <br>
-            <p>In summary, undefined is typically used to represent the absence of a value due to variables being uninitialized or missing function arguments or object properties. null, on the other hand, is used when you want to explicitly indicate the absence of a value or to clear a value in an object property. Both null and undefined are values that have their own specific use cases in JavaScript, and understanding when to use them can help you write more expressive and reliable code.
+            <p><span class="font-semibold">Explicitly Indicate Absence of Value:</span> Unlike undefined, null is used
+                to explicitly indicate the absence of a value or the intention that a variable should have no value. It
+                is often used as a placeholder when a value is expected but not available.</p>
+            <p><span class="font-semibold">Clearing Object Properties:</span> You can set an object property to null to
+                indicate that it should have no value or to clear a previously assigned value.</p>
+            <p><span class="font-semibold">As a Sentinel Value:</span> In some cases, null can be used as a sentinel
+                value to indicate that a particular condition or state is met.</p> <br>
+            <p>In summary, undefined is typically used to represent the absence of a value due to variables being
+                uninitialized or missing function arguments or object properties. null, on the other hand, is used when
+                you want to explicitly indicate the absence of a value or to clear a value in an object property. Both
+                null and undefined are values that have their own specific use cases in JavaScript, and understanding
+                when to use them can help you write more expressive and reliable code.
+            </p>
+        </div>
+    </section>
+    <section>
+        <h1 class="text-4xl font-bold">What do you mean by REST API?</h1>
+        <div>
+            <p>REST API stands for Representational State Transfer Application Programming Interface. It is a set of
+                architectural principles and constraints used for designing networked applications. REST is not a
+                specific technology or protocol; rather, it is an architectural style that leverages the HTTP protocol
+                for communication between clients (such as web browsers or mobile apps) and servers.</p>
+            <p><span class="font-semibold">Statelessness: </span>Each HTTP request from a client to a server must
+                contain all the information needed to understand and process the request. The server should not rely on
+                any previous requests or stored client data. This makes REST APIs scalable and easy to maintain.</p>
+            <p><span class="font-semibold">Resource-Based:</span>In a RESTful API, resources (such as data objects or
+                services) are identified by unique URIs (Uniform Resource Identifiers). These URIs serve as the address
+                for accessing and manipulating resources. For example, a REST API for a bookstore might have URIs like
+                /books to list all books and /books/123 to retrieve a specific book.</p>
+            <p><span class="font-semibold">HTTP Methods:</span> REST APIs use standard HTTP methods (verbs) for
+                performing operations on resources. The most commonly used HTTP methods in REST are:
+
+            <p>GET: Retrieve data from the server (e.g., reading a book's details).</p>
+            <p>POST: Create a new resource on the server (e.g., adding a new book).</p>
+            <p>PUT: Update an existing resource on the server (e.g., modifying a book's information).</p>
+            <p>DELETE: Remove a resource from the server (e.g., deleting a book).</p>
+            </p>
+            <p><span class="font-semibold">Representation:</span> Resources can have multiple representations, such as JSON, XML, HTML, or others. Clients can specify the desired representation using HTTP headers (e.g., Accept header).
+            </p>
+            <p><span class="font-semibold">Stateless Communication:</span> RESTful interactions are stateless, meaning that each request/response from the client to the server should contain all necessary information. There should be no session state stored on the server between requests.
+            </p>
+            <p><span class="font-semibold">Uniform Interface: </span>A uniform and consistent interface is maintained throughout the API, making it predictable and easy to understand. This includes consistent naming conventions for resources and the use of standard HTTP methods.</p>
+            <p><span class="font-semibold">Layered System: </span>REST allows for the use of intermediary components (proxies, gateways, load balancers) to improve system scalability and security without affecting the overall architecture.</p>
+            <p><span class="font-semibold">Client-Server Architecture:</span> The client and server are separate entities that communicate over a network. This separation of concerns allows for more flexibility and scalability in designing both the client and server components.</p> <br>
+            <p>RESTful APIs are widely used in web development due to their simplicity, scalability, and compatibility with the HTTP protocol. They are commonly used for building web services, mobile app backends, and various distributed systems where data needs to be accessed and manipulated over the internet.
             </p>
         </div>
     </section>
