@@ -18,11 +18,12 @@ const videoDisplay = async(categoryid) => {
     const response=await fetch (`https://openapi.programming-hero.com/api/videos/category/${categoryid}`);
     const data=await response.json();
     const videos=data.data
-    // console.log(videos);
+    console.log(videos.length);
     const videoContainer=document.getElementById("videoContainer");
     videoContainer.innerHTML='';
-    videos.forEach(video=>{
-        console.log(video);
+    if(videos.length>0){
+      videos.forEach(video=>{
+      
         const videoDiv=document.createElement("div");
         videoDiv.innerHTML=`
         <figure><img src="${video.thumbnail}" alt="Shoes" /></figure>
@@ -37,7 +38,7 @@ const videoDisplay = async(categoryid) => {
                         <div class="flex items-center" >
                         
                          <p>${video.authors[0].profile_name}</p>
-                         <img src="" alt="">
+                         <img  src="" alt="">
                         
                         </div>
                         <p>${video.others.views} views</p>
@@ -48,11 +49,20 @@ const videoDisplay = async(categoryid) => {
                 `;
                 videoContainer.appendChild(videoDiv)   
     })
-
-    // console.log(categoryid);
+    }
+    else{
+      const noDataMessage = document.createElement('div');
+        noDataMessage.innerHTML = `
+            <div class="relative lg:left-[460px] mt-10">
+                <img class="m-auto" src="./Icon.png" alt="">
+                <p class="font-bold text-2xl text-center">Oops!! Sorry, There is no content here</p>
+            </div>
+        `;
+        videoContainer.appendChild(noDataMessage);
+    }
+    
 };
 function newBlog(){
-    // console.log('clicked');
     window.location.href=('blog.html')
 }
 
