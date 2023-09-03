@@ -1,0 +1,19 @@
+#videoContainer div{
+border-radius: 10px;
+}
+
+#button_container button{
+    background-color:gainsboro;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+#button_container button:hover{
+    background-color:#FF1F3D;
+    color: white;
+}
