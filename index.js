@@ -23,10 +23,10 @@ const videoDisplay = async(categoryid) => {
     videoContainer.innerHTML='';
     if(videos.length>0){
       videos.forEach(video=>{
-      
+        const blueTik = video.authors[0].verified? '<img class = "w-5" src = "./varified.png" alt = "">' : '';
         const videoDiv=document.createElement("div");
         videoDiv.innerHTML=`
-        <figure><img src="${video.thumbnail}" alt="Shoes" /></figure>
+        <figure><img class="w-full h-48 rounded" src="${video.thumbnail}" alt="Shoes" /></figure>
                 <div class="card-body">
                   <div class="flex items-start">
                     <div class="flex items-start ">
@@ -38,7 +38,10 @@ const videoDisplay = async(categoryid) => {
                         <div class="flex items-center" >
                         
                          <p>${video.authors[0].profile_name}</p>
-                         <img  src="${video.authors[0].verified}" alt="">
+                         <p>${blueTik}</p>
+
+                         
+                         
                         
                         </div>
                         <p>${video.others.views} views</p>
